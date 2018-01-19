@@ -20,11 +20,14 @@ A one-to-one mapping between images from input to target domain in the training 
 
 ![](https://github.com/hardikbansal/CycleGAN/blob/master/images/discriminator.jpg)
 
+Above images are taken from original paper
+
 ## Our model 
-we used tensorflow as backend for our model.we used resnet blocks for extracting features.
+We used tensorflow as backend for our model.we used resnet blocks for extracting features.
 In our model we defind three function for getting and proof reading of genrated image by our model.
 Genrator and Discriminator Genrator genrator genrator images by tranforming one image feature to anopther image and Discriminator does proof reading part i.e check image genrated by genrator is good or bad( in simple words). the only way to fool dicriminator if genrated recommendation for images is close 1.
 It also checks for loss genrated by Genrator, Discriminator and by Cyclic Loss during the training part.
+
 ## Issues 
  Right now due to lack of computational power we were only be able to train our model upto max 20 epoch which was taking around 10 hours on one nvidia gtx 1080. we will update our code as well as result. when we will be getting better result.Right now our model is able to detect edges, extracting features and partially imposing on input image. the problem is lack of dataset for designing and with solid colour pallet because here we have to change mapping from interior to solid colour pallet because there is nothing to extract feature from solid colour pallet.
  Result was kinda good after 10 epoch with texture pallet feature was able to extract from it and showing better result with it.
