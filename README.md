@@ -1,8 +1,10 @@
 # AI-Interior
 AI-enabled Interior decoration app
 
-Using [Cycle GAN](https://arxiv.org/abs/1703.10593) with source code cloned and modified from
-[xhujoy/CycleGAN-tensorflow/](https://github.com/xhujoy/CycleGAN-tensorflow/)
+Using Cycle GAN as discussed in [Unpaired Image-to-Image Translation using
+Cycle-Consistent Adversarial Networks] (https://arxiv.org/abs/1703.10593) with
+source code cloned and modified from [xhujoy/CycleGAN-tensorflow/]
+(https://github.com/xhujoy/CycleGAN-tensorflow/)
 
 We created and trained our own `texture2interior` model for this task.
 
@@ -10,17 +12,17 @@ We created and trained our own `texture2interior` model for this task.
 Its basically mapping of unpaired images by extracting features of one image and transforming and imposing them on another image.
 A one-to-one mapping between images from input to target domain in the training set is very powerful and can be used in variety of problems for solving real life problems. This is achieved by a type of generative model, specifically a Generative Adversarial Network dubbed CycleGAN.Here are some examples for this model.
 
-![teaser](https://user-images.githubusercontent.com/31013555/35161803-46a3d952-fd67-11e7-8b87-bbca2191f245.jpg)
+![Sample models shown in paper](https://user-images.githubusercontent.com/31013555/35161803-46a3d952-fd67-11e7-8b87-bbca2191f245.jpg)
 
 ## Working Principle of CycleGAN (MAP)
 
-![](https://github.com/hardikbansal/CycleGAN/blob/master/images/model.jpg)
+![Model](https://github.com/hardikbansal/CycleGAN/raw/master/images/model.jpg)
 
-![](https://github.com/hardikbansal/CycleGAN/blob/master/images/Generator.jpg)
+![Generator](https://github.com/hardikbansal/CycleGAN/raw/master/images/Generator.jpg)
 
-![](https://github.com/hardikbansal/CycleGAN/blob/master/images/discriminator.jpg)
+![Discriminator](https://github.com/hardikbansal/CycleGAN/raw/master/images/discriminator.jpg)
 
-Above images are taken from original paper
+Above images are taken from the original paper
 
 ## Our model 
 We used tensorflow as backend for our model.we used resnet blocks for extracting features.
