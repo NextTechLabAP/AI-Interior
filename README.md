@@ -44,7 +44,7 @@ during the training.
 ## Issues
 Right now due to lack of computational power we were only able to train our
 model upto 20 epoch (which was taking around 10 hours) on a single Nvidia GTX
-1080, running TensorFloww 1.4 with Python 3.6 on Windows 10. We will update our
+1080, running TensorFlow 1.4 with Python 3.6 on Windows 10. We will update our
 code as well as result, when we get better results.
 
 Right now our model is able to detect edges, extracting features and partially
@@ -54,7 +54,11 @@ solid colour palette because there is nothing to extract features from in a
 solid colour palette.
 
 Results observed were kind of good after 10 epochs with texture palette.
-Features were being extracted and showing better result with it.
+Features were being extracted and showing better result with it. After
+75 epoch we find out our training model was testing and correcting previous
+images features that were extracted.So as we increase the number of epochs 
+the better results we get. But due to lack of compoutaional power we were bound
+as we improve our model we will prvide results.
 
 ## NOTE
 We will update this repositry as our model gets better.
