@@ -15,9 +15,9 @@ parser.add_argument('--epoch_step', dest='epoch_step',
 parser.add_argument('--batch_size', dest='batch_size',
                     type=int, default=1, help='# images in batch')
 parser.add_argument('--train_size', dest='train_size',
-                    type=int, default=1e6, help='# images used to train')
+                    type=int, default=1e8, help='# images used to train')
 parser.add_argument('--load_size', dest='load_size', type=int,
-                    default=286, help='scale images to this size')
+                    default=256, help='scale images to this size')
 parser.add_argument('--fine_size', dest='fine_size', type=int,
                     default=256, help='then crop to this size')
 parser.add_argument('--ngf', dest='ngf', type=int, default=64,
@@ -29,9 +29,9 @@ parser.add_argument('--input_nc', dest='input_nc', type=int,
 parser.add_argument('--output_nc', dest='output_nc', type=int,
                     default=3, help='# of output image channels')
 parser.add_argument('--lr', dest='lr', type=float,
-                    default=0.0002, help='initial learning rate for adam')
+                    default=0.0001, help='initial learning rate for adam')
 parser.add_argument('--beta1', dest='beta1', type=float,
-                    default=0.5, help='momentum term of adam')
+                    default=0.6, help='momentum term of adam')
 parser.add_argument('--which_direction', dest='which_direction',
                     # default='BtoA', help='AtoB or BtoA')
                     default='BtoA', help='AtoB or BtoA')
